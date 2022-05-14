@@ -30,6 +30,8 @@
     "@typescript-eslint/no-non-null-assertion": "off",
     "import/prefer-default-export": 0,
     "react/react-in-jsx-scope": "off",
+    "react/self-closing-comp": "off",
+    "react/jsx-no-useless-fragment": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -57,7 +59,10 @@
             "parent",
             "sibling",
             "index"
-          ]
+          ],
+          "/^..\/assets/",
+          "/^..\/..\/assets/",
+          "/^..\/..\/..\/assets/"
         ],
         "alphabetize": {
           "order": "asc",
@@ -70,7 +75,8 @@
       {
         "devDependencies": true
       }
-    ]
+    ],
+    "jsx-a11y/anchor-is-valid": "off"
   },
   "settings": {
     "import/resolver": {
